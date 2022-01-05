@@ -1,0 +1,18 @@
+{
+  "name": "@control/sign",
+  "version": "0.0.0",
+  "description": "",
+  "main": "sig.js",
+  "bin": {
+    "control-sign": "sign.js",
+    "control-verify": "verify.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jo Colina <jo@jocolina.com>",
+  "license": "MIT",
+  "dependencies": {
+    "argumentate": "^2.0.0"
+  }
+}
