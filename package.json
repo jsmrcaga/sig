@@ -1,7 +1,7 @@
 {
   "name": "@control/sign",
   "version": "0.0.0",
-  "description": "",
+  "description": "A simple sign/verify package that uses SSH RSA keys",
   "main": "sig.js",
   "bin": {
     "control-sign": "sign.js",
@@ -14,5 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "argumentate": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

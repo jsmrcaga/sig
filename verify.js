@@ -17,7 +17,7 @@ const {
 	key 
 } = cli({
 	args: {
-		s: 'signature',		
+		s: 'signature',
 	},
 	defaultKeyLocation: path.join(OS.homedir(), './.ssh/id_rsa.pub.pem')
 });
