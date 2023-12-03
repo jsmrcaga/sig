@@ -1,0 +1,23 @@
+name: Test
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+
+      - uses: actions/cache@master
+        id: cache
+        with:
+          key: npm-i-${{ hashFiles('package-lock.json') }}
+
+      - run: npm i
+        if: steps.cache.outputs.cache-hit != 'true'
+
+      - run: npm test
