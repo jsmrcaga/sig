@@ -2,3 +2,5 @@ node_modules/
 
 *.sign
 *.signature
+*.enc
+*.dec

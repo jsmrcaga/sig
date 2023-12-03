@@ -1,14 +1,21 @@
 {
   "name": "@control/sign",
   "version": "0.0.0",
-  "description": "A simple sign/verify package that uses SSH RSA keys",
-  "main": "sig.js",
+  "description": "A simple sign/verify - encrypt/decrypt package that uses SSH RSA keys",
+  "main": "src/index.js",
   "bin": {
-    "control-sign": "sign.js",
-    "control-verify": "verify.js"
+    "sign": "commands/sign.js",
+    "verify": "commands/verify.js",
+    "encrypt": "commands/encrypt.js",
+    "decrypt": "commands/decrypt.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test test/**.test.js",
+
+    "sign": "node commands/sign",
+    "verify": "node commands/verify",
+    "encrypt": "node commands/encrypt",
+    "decrypt": "node commands/decrypt"
   },
   "author": "Jo Colina <jo@jocolina.com>",
   "license": "MIT",
